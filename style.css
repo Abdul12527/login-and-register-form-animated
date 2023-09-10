@@ -64,6 +64,10 @@ button{
     cursor: pointer;
 
 }
+.Registert label{
+    cursor: default;
+    pointer-events: none;
+}
 button:hover{
     background: #1f1f38;
 }
@@ -82,10 +86,17 @@ button:hover{
 }
 #check:checked ~ .Login{
     transform: translateY(-500px);
+
 }
 #check:checked ~ .Login label{
     transform: scale(1);
+    cursor:default;
+    pointer-events: none;
+
 }
 #check:checked ~ .Registert label{
     transform: scale(0.7);
+    cursor: pointer;
+    pointer-events: all;
+
 }
